@@ -5,3 +5,20 @@
 ## 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 
 ## By considering the terms in the Fibonacci sequence whose ##values do not exceed four million, find the sum of the ##even-valued terms.
+
+
+
+start1=1
+start2=2
+final=2
+temp=0
+
+   
+while temp < 4000000:
+    temp=start1+start2
+    if temp%2==0:
+        final += temp
+    start1=start2
+    start2=temp
+print(final)
+    
